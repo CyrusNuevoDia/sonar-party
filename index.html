@@ -21,7 +21,7 @@
 <div style="min-height: 100vh; background: #1b0630; color: #fdf6ff; overflow-x: hidden; position: relative;">
 
   <nav data-screen-label="Nav" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px clamp(20px, 5vw, 64px); position: relative; z-index: 5;">
-    <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; color: #ff4fa3; letter-spacing: -.01em;">SONAR PARTY</span>
+    <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; color: #ff4fa3; letter-spacing: -.01em;">SONAR.PARTY</span>
     <div style="display: flex; align-items: center; gap: 26px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
       <a href="#install" style="color: #b79ecf;" style-hover="color: #d8ff4f; text-decoration: none;">install</a>
       <a href="https://github.com/CyrusNuevoDia/sonar-party" target="_blank" style="background: #d8ff4f; color: #1b0630; padding: 7px 16px; border-radius: 999px; font-weight: 500;" style-hover="background: #ff4fa3; color: #1b0630; text-decoration: none;">github ↗</a>
@@ -63,21 +63,19 @@
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">01 / INSTALL</div>
         <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Add Sonar to your agent</div>
         <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">Copy and run the install command.</p>
-        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 8px;">
-          <button sc-camel-on-click="{{ copyInstall }}" style="background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #fdf6ff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #d8ff4f; color: #1b0630;">{{ installCopyLabel }}</button>
-        </div>
+        <button sc-camel-on-click="{{ copyInstall }}" style="align-self: flex-start; margin-top: auto; display: inline-flex; align-items: center; gap: 10px; background: #1b0630; border: none; cursor: pointer; color: #d8ff4f; padding: 12px 18px; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; box-shadow: 4px 4px 0 #ff4fa3;" style-hover="background: #ff4fa3; color: #1b0630;">{{ installCopyLabel }}</button>
       </div>
       <div style="background: #fdf6ff; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(.8deg); display: flex; flex-direction: column; gap: 12px;">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">02 / SET UP</div>
         <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Tell your agent to open it</div>
         <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">“Set up Sonar for Luma and Partiful. Open each site so I can sign in.”</p>
-        <button sc-camel-on-click="{{ copySetup }}" style="align-self: flex-start; margin-top: auto; background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #d8ff4f; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #ff4fa3; color: #1b0630;">{{ setupCopyLabel }}</button>
+        <button sc-camel-on-click="{{ copySetup }}" style="align-self: flex-start; margin-top: auto; display: inline-flex; align-items: center; gap: 10px; background: #1b0630; border: none; cursor: pointer; color: #d8ff4f; padding: 12px 18px; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; box-shadow: 4px 4px 0 #ff4fa3;" style-hover="background: #ff4fa3; color: #1b0630;">{{ setupCopyLabel }}</button>
       </div>
       <div style="background: #d8ff4f; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(-.6deg); display: flex; flex-direction: column; gap: 12px;">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">03 / PASTE A URL</div>
         <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Download the guest list</div>
         <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">“Get me the attendees. Download the guest list for [Luma or Partiful URL].”</p>
-        <button sc-camel-on-click="{{ copyGuestPrompt }}" style="align-self: flex-start; margin-top: auto; background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #d8ff4f; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #ff4fa3; color: #1b0630;">{{ guestPromptCopyLabel }}</button>
+        <button sc-camel-on-click="{{ copyGuestPrompt }}" style="align-self: flex-start; margin-top: auto; display: inline-flex; align-items: center; gap: 10px; background: #1b0630; border: none; cursor: pointer; color: #d8ff4f; padding: 12px 18px; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; box-shadow: 4px 4px 0 #ff4fa3;" style-hover="background: #ff4fa3; color: #1b0630;">{{ guestPromptCopyLabel }}</button>
       </div>
     </div>
   </section>
