@@ -11,18 +11,18 @@
 <x-dc>
 <helmet>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sonar Party — who's at the party? ask your agent.</title>
+<title>Sonar Party — Luma and Partiful superpowers for your agent.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap">
 <link rel="stylesheet" href="styles.css">
+<style>@media (max-width: 520px) { .hero-title { font-size: clamp(34px, 10.5vw, 46px) !important; } }</style>
 </helmet>
 <div style="min-height: 100vh; background: #1b0630; color: #fdf6ff; overflow-x: hidden; position: relative;">
 
   <nav data-screen-label="Nav" style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 20px clamp(20px, 5vw, 64px); position: relative; z-index: 5;">
     <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; color: #ff4fa3; letter-spacing: -.01em;">SONAR PARTY</span>
     <div style="display: flex; align-items: center; gap: 26px; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
-      <a href="#skills" style="color: #b79ecf;" style-hover="color: #d8ff4f; text-decoration: none;">skills</a>
       <a href="#install" style="color: #b79ecf;" style-hover="color: #d8ff4f; text-decoration: none;">install</a>
       <a href="https://github.com/CyrusNuevoDia/sonar-party" target="_blank" style="background: #d8ff4f; color: #1b0630; padding: 7px 16px; border-radius: 999px; font-weight: 500;" style-hover="background: #ff4fa3; color: #1b0630; text-decoration: none;">github ↗</a>
     </div>
@@ -34,18 +34,17 @@
     <div style="position: absolute; right: 40px; top: 100px; width: 200px; height: 200px; border-radius: 50%; pointer-events: none; background: conic-gradient(from 0deg, rgba(255,79,163,.35), transparent 90deg); animation: sweep 7s linear infinite;"></div>
     <div style="position: absolute; left: -120px; bottom: -160px; width: 340px; height: 340px; border-radius: 50%; border: 2px dotted rgba(255,79,163,.25); pointer-events: none;"></div>
     <div style="position: relative; z-index: 2; display: flex; flex-direction: column; gap: 26px; max-width: 780px;">
-      <h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(52px, 8vw, 104px); line-height: .94; letter-spacing: -.02em; text-transform: uppercase; animation: fadeUp .6s ease both;">Who's at<br>the <span style="color: #ff4fa3;">party?</span><br><span style="color: #d8ff4f;">Ask your agent.</span></h1>
+      <h1 class="hero-title" style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(52px, 8vw, 104px); line-height: .94; letter-spacing: -.02em; text-transform: uppercase; animation: fadeUp .6s ease both;">Give your agent<br><span style="color: #ff4fa3;">Luma</span> + <span style="color: #d8ff4f;">Partiful</span><br>superpowers.</h1>
       <sc-if value="{{ stickers }}" hint-placeholder-val="{{ true }}">
         <div style="display: flex; gap: 14px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 12.5px; animation: fadeUp .6s ease .1s both;">
-          <span style="background: #ff4fa3; color: #1b0630; padding: 7px 16px; border-radius: 999px; font-weight: 500; white-space: nowrap; animation: bob 3.4s ease-in-out infinite;">66 RSVP'D ✶</span>
-          <span style="background: #d8ff4f; color: #1b0630; padding: 7px 16px; border-radius: 999px; font-weight: 500; white-space: nowrap; animation: bob2 3.8s ease-in-out .4s infinite;">3 MUTUALS GOING</span>
-          <span style="border: 1.5px solid #fdf6ff; padding: 7px 16px; border-radius: 999px; white-space: nowrap; transform: rotate(-1deg);">ROOM OPEN IN THE MISSION</span>
+          <span style="background: #ff4fa3; color: #1b0630; padding: 7px 16px; border-radius: 999px; font-weight: 500; white-space: nowrap; animation: bob 3.4s ease-in-out infinite;">FULL NAME ✶</span>
+          <span style="background: #d8ff4f; color: #1b0630; padding: 7px 16px; border-radius: 999px; font-weight: 500; white-space: nowrap; animation: bob2 3.8s ease-in-out .4s infinite;">LINKEDIN URL</span>
+          <span style="border: 1.5px solid #fdf6ff; padding: 7px 16px; border-radius: 999px; white-space: nowrap; transform: rotate(-1deg); animation: bob 4.1s ease-in-out .7s infinite;">X URL</span>
         </div>
       </sc-if>
-      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #b79ecf; max-width: 52ch; animation: fadeUp .6s ease .18s both; text-wrap: pretty;">Sonar teaches your agent — Claude Code, Codex, anything that reads a <span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; color: #fdf6ff;">SKILL.md</span> — to pull guest lists off Luma &amp; Partiful and rank housing off DirectorySF. One plain-language ask, one clean CSV. Then ask the group chat too.</p>
+      <p style="margin: 0; font-size: 18px; line-height: 1.6; color: #b79ecf; max-width: 52ch; animation: fadeUp .6s ease .18s both; text-wrap: pretty;">Scrape event guests with your AI agent. Give it a Luma or Partiful URL and get a clean CSV with names, LinkedIn URLs, X URLs, and every other visible social profile.</p>
       <div style="display: flex; align-items: center; gap: 18px; flex-wrap: wrap; animation: fadeUp .6s ease .26s both;">
         <a href="#install" style="background: #d8ff4f; color: #1b0630; padding: 13px 20px; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 700; box-shadow: 5px 5px 0 #ff4fa3; white-space: nowrap; animation: bob2 3.8s ease-in-out .4s infinite;" style-hover="background: #ff4fa3; color: #1b0630; text-decoration: none;">INSTALL ↓</a>
-        <a href="#skills" style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b79ecf;" style-hover="color: #d8ff4f; text-decoration: none;">see the skills ↓</a>
       </div>
     </div>
   </header>
@@ -53,79 +52,34 @@
   <div style="animation: fadeUp .6s ease .34s both;">
   <div data-screen-label="Ticker" style="background: #d8ff4f; transform: rotate(-1deg) scale(1.02); overflow: hidden; padding: 12px 0; position: relative; z-index: 3;">
     <div style="display: flex; gap: 56px; width: max-content; animation: tick {{ tickerDur }} linear infinite; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px; color: #1b0630; white-space: nowrap; text-transform: uppercase;">
-      <span>✶ 42 of 66 guests had visible profiles</span><span>✶ 3 mutuals going tonight</span><span>✶ room open near the Mission</span><span>✶ ranked shortlist: 7 matches, evidence attached</span><span>✶ ping sent → echo received</span><span>✶ 42 of 66 guests had visible profiles</span><span>✶ 3 mutuals going tonight</span><span>✶ room open near the Mission</span><span>✶ ranked shortlist: 7 matches, evidence attached</span><span>✶ ping sent → echo received</span>
+      <span>✶ Luma guest list → CSV</span><span>✶ Partiful RSVPs → CSV</span><span>✶ full names included</span><span>✶ LinkedIn URLs included</span><span>✶ X URLs included</span><span>✶ Luma guest list → CSV</span><span>✶ Partiful RSVPs → CSV</span><span>✶ full names included</span><span>✶ LinkedIn URLs included</span><span>✶ X URLs included</span>
     </div>
   </div>
 </div>
 
-  <section data-screen-label="How it works" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vh, 112px) clamp(20px, 5vw, 64px) clamp(40px, 6vh, 72px);">
-    <h2 style="margin: 0 0 40px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); text-transform: uppercase; letter-spacing: -.01em;">Ping <span style="color: #ff4fa3;">→</span> Echo <span style="color: #ff4fa3;">→</span> Picture</h2>
+  <section id="install" data-screen-label="Get started" style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vh, 112px) clamp(20px, 5vw, 64px);">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
       <div style="background: #ff4fa3; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(-1.2deg); display: flex; flex-direction: column; gap: 12px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">01 / PING</div>
-        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Ask in one sentence</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">"Who's at this Partiful?" "Who's looking for a room near the Mission, fine with five housemates?"</p>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">01 / INSTALL</div>
+        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Add Sonar to your agent</div>
+        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">Pick your agent and paste the install commands.</p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 8px;">
+          <button sc-camel-on-click="{{ copyClaude }}" style="background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #fdf6ff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #d8ff4f; color: #1b0630;">{{ claudeCopyLabel }}</button>
+          <button sc-camel-on-click="{{ copyCodex }}" style="background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #fdf6ff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #d8ff4f; color: #1b0630;">{{ codexCopyLabel }}</button>
+        </div>
       </div>
       <div style="background: #fdf6ff; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(.8deg); display: flex; flex-direction: column; gap: 12px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">02 / ECHO</div>
-        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Your agent does the scrolling</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">It runs the browser and bounces your ask off Luma, Partiful &amp; DirectorySF — seeing exactly what your signed-in account can see.</p>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">02 / SET UP</div>
+        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Tell your agent to open it</div>
+        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">“Set up Sonar for Luma and Partiful. Open each site so I can sign in.”</p>
+        <button sc-camel-on-click="{{ copySetup }}" style="align-self: flex-start; margin-top: auto; background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #d8ff4f; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #ff4fa3; color: #1b0630;">{{ setupCopyLabel }}</button>
       </div>
       <div style="background: #d8ff4f; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(-.6deg); display: flex; flex-direction: column; gap: 12px;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">03 / PICTURE</div>
-        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">A picture comes back</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">A clean CSV or ranked shortlist lands in your workspace, evidence attached — plus an honest account of coverage. You decide.</p>
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">03 / PASTE A URL</div>
+        <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Download the guest list</div>
+        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">“Get me the attendees. Download the guest list for [Luma or Partiful URL].”</p>
+        <button sc-camel-on-click="{{ copyGuestPrompt }}" style="align-self: flex-start; margin-top: auto; background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #d8ff4f; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #ff4fa3; color: #1b0630;">{{ guestPromptCopyLabel }}</button>
       </div>
-    </div>
-  </section>
-
-  <section id="skills" data-screen-label="Skills" style="max-width: 1240px; margin: 0 auto; padding: clamp(40px, 6vh, 72px) clamp(20px, 5vw, 64px) clamp(64px, 10vh, 112px); position: relative;">
-    <div style="position: absolute; right: -140px; top: 0; width: 300px; height: 300px; border-radius: 50%; border: 2px dashed rgba(216,255,79,.2); pointer-events: none;"></div>
-    <div style="display: flex; align-items: baseline; gap: 18px; margin-bottom: 36px; flex-wrap: wrap;">
-      <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); text-transform: uppercase; letter-spacing: -.01em;">The lineup</h2>
-      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b79ecf;">3 skills on the bill, more echoes coming</span>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
-      <div style="background: #fdf6ff; color: #1b0630; border-radius: 16px; padding: 28px; box-shadow: 6px 6px 0 #ff4fa3; display: flex; flex-direction: column; gap: 14px;" style-hover="transform: translateY(-4px) rotate(-1deg); transition: transform .2s ease;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; background: #1b0630; color: #d8ff4f; align-self: flex-start; padding: 5px 12px; border-radius: 6px;">sonar:luma</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; flex: 1; text-wrap: pretty;">Pull a Luma event's visible guest roster into a clean CSV — names plus LinkedIn, X, and other socials — so you can decide whether tonight is worth leaving the house.</p>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; color: #ff4fa3;">→ guests.csv</div>
-      </div>
-      <div style="background: #fdf6ff; color: #1b0630; border-radius: 16px; padding: 28px; box-shadow: 6px 6px 0 #d8ff4f; display: flex; flex-direction: column; gap: 14px;" style-hover="transform: translateY(-4px) rotate(1deg); transition: transform .2s ease;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; background: #1b0630; color: #d8ff4f; align-self: flex-start; padding: 5px 12px; border-radius: 6px;">sonar:partiful</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; flex: 1; text-wrap: pretty;">Extract a Partiful event's visible guest roster — every RSVP tab, Going to Maybe — into the same tidy CSV of names and socials.</p>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; color: #ff4fa3;">→ guests.csv</div>
-      </div>
-      <div style="background: #fdf6ff; color: #1b0630; border-radius: 16px; padding: 28px; box-shadow: 6px 6px 0 #ff4fa3; display: flex; flex-direction: column; gap: 14px;" style-hover="transform: translateY(-4px) rotate(-1deg); transition: transform .2s ease;">
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; font-weight: 500; background: #1b0630; color: #d8ff4f; align-self: flex-start; padding: 5px 12px; border-radius: 6px;">sonar:directorysf</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; flex: 1; text-wrap: pretty;">Search DirectorySF housing searchers and spaces in plain language, and get a ranked shortlist with evidence — not vibes.</p>
-        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; color: #ff4fa3;">→ shortlist, ranked</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="install" data-screen-label="Install" style="background: #12021f; border-top: 3px solid #ff4fa3; border-bottom: 3px solid #ff4fa3;">
-    <div style="max-width: 1240px; margin: 0 auto; padding: clamp(64px, 10vh, 112px) clamp(20px, 5vw, 64px);">
-      <h2 style="margin: 0 0 36px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); text-transform: uppercase; letter-spacing: -.01em;">Get on <span style="color: #d8ff4f;">the list</span></h2>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;">
-        <div style="background: #1b0630; border: 1.5px solid rgba(216,255,79,.4); border-radius: 14px; overflow: hidden;">
-          <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: rgba(216,255,79,.08); border-bottom: 1.5px solid rgba(216,255,79,.25);">
-            <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px; color: #d8ff4f;">CLAUDE CODE</span>
-            <button sc-camel-on-click="{{ copyClaude }}" style="background: #d8ff4f; border: none; border-radius: 999px; cursor: pointer; color: #1b0630; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 5px 12px;" style-hover="background: #ff4fa3;">{{ claudeCopyLabel }}</button>
-          </div>
-          <pre style="margin: 0; padding: 22px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.8; color: #b79ecf; overflow-x: auto;">/plugin marketplace add CyrusNuevoDia/sonar-party
-/plugin install sonar@sonar-party</pre>
-        </div>
-        <div style="background: #1b0630; border: 1.5px solid rgba(255,79,163,.4); border-radius: 14px; overflow: hidden;">
-          <div style="display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: rgba(255,79,163,.08); border-bottom: 1.5px solid rgba(255,79,163,.25);">
-            <span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 15px; color: #ff4fa3;">CODEX</span>
-            <button sc-camel-on-click="{{ copyCodex }}" style="background: #ff4fa3; border: none; border-radius: 999px; cursor: pointer; color: #1b0630; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 5px 12px;" style-hover="background: #d8ff4f;">{{ codexCopyLabel }}</button>
-          </div>
-          <pre style="margin: 0; padding: 22px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; line-height: 1.8; color: #b79ecf; overflow-x: auto;">codex plugin marketplace add CyrusNuevoDia/sonar-party
-codex plugin add sonar@sonar-party</pre>
-        </div>
-      </div>
-      <p style="margin: 26px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #b79ecf; line-height: 1.7; max-width: 80ch; text-wrap: pretty;">Anything else: point your agent at <span style="color: #fdf6ff;">skills/</span> — each one is self-contained. First run needs your real accounts (Luma, Partiful phone sign-in, a DirectorySF invite); your agent walks you through signing in inside its browser. It never asks for your credentials.</p>
     </div>
   </section>
 
@@ -134,9 +88,9 @@ codex plugin add sonar@sonar-party</pre>
       <div style="position: absolute; right: -54px; top: -54px; width: 150px; height: 150px; border: 2px dashed rgba(255,79,163,.45); border-radius: 50%; pointer-events: none;"></div>
       <div style="position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: clamp(28px, 5vw, 64px); align-items: center; background: #fdf6ff; color: #1b0630; border: 2px solid #1b0630; border-radius: 22px; padding: clamp(28px, 5vw, 56px); box-shadow: 10px 10px 0 #d8ff4f; transform: rotate(-.35deg);">
         <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 18px;">
-          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; background: #ff4fa3; padding: 6px 12px; border-radius: 999px;">The afterparty</span>
-          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: .96; letter-spacing: -.02em; text-transform: uppercase;">Got their socials.<br><span style="color: #ff4fa3;">But who are they?</span></h2>
-          <p style="margin: 0; max-width: 53ch; font-size: 17px; line-height: 1.6; text-wrap: pretty;">Sonar gets the guest list and their social URLs. When you want to know who those people actually are, <strong>social</strong> gives your agent the LinkedIn and X profile context behind the links.</p>
+          <span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; background: #ff4fa3; padding: 6px 12px; border-radius: 999px;">After the guest list</span>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(36px, 5vw, 64px); line-height: .96; letter-spacing: -.02em; text-transform: uppercase;"><span style="color: #ff4fa3;">Enrich</span> profiles.</h2>
+          <p style="margin: 0; max-width: 53ch; font-size: 17px; line-height: 1.6; text-wrap: pretty;">Now that you have a rich guest list with LinkedIn and X URLs, <strong>social</strong> can read the profiles behind those links and help you understand who is actually going.</p>
           <a href="https://www.usesocial.dev/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 10px; background: #1b0630; color: #d8ff4f; padding: 12px 18px; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; box-shadow: 4px 4px 0 #ff4fa3;" style-hover="background: #ff4fa3; color: #1b0630; text-decoration: none;">FIND OUT WITH SOCIAL ↗</a>
         </div>
         <div aria-hidden="true" style="font-family: 'IBM Plex Mono', monospace; font-size: clamp(12px, 1.5vw, 14px); line-height: 1.8; background: #12021f; color: #b79ecf; border-radius: 14px; padding: clamp(20px, 4vw, 32px); box-shadow: inset 0 0 0 1px rgba(216,255,79,.25); overflow: hidden;">
@@ -156,10 +110,8 @@ codex plugin add sonar@sonar-party</pre>
       <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; font-family: 'IBM Plex Mono', monospace; font-size: 13px;">
         <div style="display: flex; gap: 24px;">
           <a href="https://github.com/CyrusNuevoDia/sonar-party" target="_blank" style="color: #1b0630; font-weight: 500; text-decoration: underline; white-space: nowrap;" style-hover="color: #fdf6ff;">github ↗</a>
-          <a href="https://github.com/CyrusNuevoDia/sonar-party/blob/main/docs/purpose.md" target="_blank" style="color: #1b0630; font-weight: 500; text-decoration: underline;" style-hover="color: #fdf6ff;">purpose</a>
-          <a href="https://github.com/CyrusNuevoDia/sonar-party/blob/main/docs/audience.md" target="_blank" style="color: #1b0630; font-weight: 500; text-decoration: underline;" style-hover="color: #fdf6ff;">audience</a>
         </div>
-        <div style="font-weight: 500;">ask the group chat • and your agent</div>
+        <div style="font-weight: 500;">Luma + Partiful superpowers for your agent</div>
       </div>
     </div>
   </footer>
@@ -181,8 +133,12 @@ class Component extends DCLogic {
       tickerDur: (this.props.tickerSeconds ?? 26) + 's',
       copyClaude: () => this.copy('claude', '/plugin marketplace add CyrusNuevoDia/sonar-party\n/plugin install sonar@sonar-party'),
       copyCodex: () => this.copy('codex', 'codex plugin marketplace add CyrusNuevoDia/sonar-party\ncodex plugin add sonar@sonar-party'),
-      claudeCopyLabel: c === 'claude' ? 'copied!' : 'copy',
-      codexCopyLabel: c === 'codex' ? 'copied!' : 'copy',
+      copySetup: () => this.copy('setup', 'Set up Sonar for Luma and Partiful. Open each site so I can sign in.'),
+      copyGuestPrompt: () => this.copy('guest', 'Get me the attendees. Download the guest list for [Luma or Partiful URL].'),
+      claudeCopyLabel: c === 'claude' ? 'COPIED!' : 'COPY FOR CLAUDE',
+      codexCopyLabel: c === 'codex' ? 'COPIED!' : 'COPY FOR CODEX',
+      setupCopyLabel: c === 'setup' ? 'COPIED!' : 'COPY PROMPT',
+      guestPromptCopyLabel: c === 'guest' ? 'COPIED!' : 'COPY PROMPT',
     };
   }
 }
