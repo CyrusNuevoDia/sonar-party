@@ -1,0 +1,12 @@
+{
+  "name": "sonar",
+  "version": "0.1.0",
+  "description": "Sonar for SF life — skills that let your agent pull Luma/Partiful guest lists and search DirectorySF housing.",
+  "author": {
+    "name": "Cyrus Nouroozi",
+    "url": "https://github.com/CyrusNuevoDia"
+  },
+  "homepage": "https://github.com/CyrusNuevoDia/sonar-party",
+  "repository": "https://github.com/CyrusNuevoDia/sonar-party",
+  "keywords": ["san-francisco", "events", "luma", "partiful", "directorysf", "housing"]
+}

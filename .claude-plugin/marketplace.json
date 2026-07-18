@@ -1,0 +1,14 @@
+{
+  "name": "sonar-party",
+  "owner": {
+    "name": "Cyrus Nouroozi",
+    "url": "https://github.com/CyrusNuevoDia"
+  },
+  "plugins": [
+    {
+      "name": "sonar",
+      "source": "./",
+      "description": "Sonar for SF life — skills that let your agent pull Luma/Partiful guest lists and search DirectorySF housing."
+    }
+  ]
+}
