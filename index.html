@@ -62,10 +62,9 @@
       <div style="background: #ff4fa3; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(-1.2deg); display: flex; flex-direction: column; gap: 12px;">
         <div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500;">01 / INSTALL</div>
         <div style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 24px;">Add Sonar to your agent</div>
-        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">Pick your agent and paste the install commands.</p>
+        <p style="margin: 0; line-height: 1.55; font-size: 15px; text-wrap: pretty;">Copy and run the install command.</p>
         <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; padding-top: 8px;">
-          <button sc-camel-on-click="{{ copyClaude }}" style="background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #fdf6ff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #d8ff4f; color: #1b0630;">{{ claudeCopyLabel }}</button>
-          <button sc-camel-on-click="{{ copyCodex }}" style="background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #fdf6ff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #d8ff4f; color: #1b0630;">{{ codexCopyLabel }}</button>
+          <button sc-camel-on-click="{{ copyInstall }}" style="background: #1b0630; border: none; border-radius: 999px; cursor: pointer; color: #fdf6ff; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; padding: 8px 12px;" style-hover="background: #d8ff4f; color: #1b0630;">{{ installCopyLabel }}</button>
         </div>
       </div>
       <div style="background: #fdf6ff; color: #1b0630; border-radius: 16px; padding: 28px; transform: rotate(.8deg); display: flex; flex-direction: column; gap: 12px;">
@@ -131,12 +130,10 @@ class Component extends DCLogic {
     return {
       stickers: this.props.stickers ?? true,
       tickerDur: (this.props.tickerSeconds ?? 26) + 's',
-      copyClaude: () => this.copy('claude', '/plugin marketplace add CyrusNuevoDia/sonar-party\n/plugin install sonar@sonar-party'),
-      copyCodex: () => this.copy('codex', 'codex plugin marketplace add CyrusNuevoDia/sonar-party\ncodex plugin add sonar@sonar-party'),
+      copyInstall: () => this.copy('install', 'npx skills add CyrusNuevoDia/sonar-party'),
       copySetup: () => this.copy('setup', 'Set up Sonar for Luma and Partiful. Open each site so I can sign in.'),
       copyGuestPrompt: () => this.copy('guest', 'Get me the attendees. Download the guest list for [Luma or Partiful URL].'),
-      claudeCopyLabel: c === 'claude' ? 'COPIED!' : 'COPY FOR CLAUDE',
-      codexCopyLabel: c === 'codex' ? 'COPIED!' : 'COPY FOR CODEX',
+      installCopyLabel: c === 'install' ? 'COPIED!' : 'COPY COMMAND',
       setupCopyLabel: c === 'setup' ? 'COPIED!' : 'COPY PROMPT',
       guestPromptCopyLabel: c === 'guest' ? 'COPIED!' : 'COPY PROMPT',
     };
