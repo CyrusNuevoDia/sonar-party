@@ -1,0 +1,4 @@
+interface:
+  display_name: "DirectorySF Finder"
+  short_description: "Find matching DirectorySF searchers and spaces"
+  default_prompt: "Use $directorysf to find DirectorySF searchers or spaces that match my natural-language criteria."
