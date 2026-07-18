@@ -1,4 +1,4 @@
 interface:
   display_name: "Partiful Guest CSV"
-  short_description: "Extract Partiful guests into Venn-ready CSVs"
-  default_prompt: "Use $partiful to extract the visible guests from the open Partiful event into a Venn-ready CSV."
+  short_description: "Extract Partiful guests into a clean CSV"
+  default_prompt: "Use $partiful to extract the visible guests from the open Partiful event into a CSV."

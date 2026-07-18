@@ -1,0 +1,4 @@
+interface:
+  display_name: "Luma Guest CSV"
+  short_description: "Extract Luma guests into a clean CSV"
+  default_prompt: "Use $luma to extract the visible guests from the open Luma event into a CSV."
