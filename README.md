@@ -35,14 +35,11 @@ directory with the detailed browser procedures.
 /plugin install sonar@sonar-party
 ```
 
-**Codex** — skills are discovered from `.agents/skills/`, which this repo wires
-up via symlink. Clone and work inside the repo, or link the skills into your
-own workspace:
+**Codex** — install the plugin:
 
-```sh
-git clone https://github.com/CyrusNuevoDia/sonar-party
-mkdir -p your-workspace/.agents/skills
-ln -s "$PWD/sonar-party/skills/"* your-workspace/.agents/skills/
+```text
+codex plugin marketplace add CyrusNuevoDia/sonar-party
+codex plugin add sonar@sonar-party
 ```
 
 **Anything else** — point your agent at `skills/`. Each skill is
