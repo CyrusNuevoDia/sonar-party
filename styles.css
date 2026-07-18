@@ -1,0 +1,10 @@
+html, body { margin: 0; padding: 0; background: #1b0630; }
+  body { font-family: 'Space Grotesk', sans-serif; }
+  a { color: #d8ff4f; text-decoration: none; }
+  a:hover { color: #ff4fa3; text-decoration: underline; }
+  ::selection { background: #ff4fa3; color: #1b0630; }
+  @keyframes sweep { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes bob { 0%, 100% { transform: rotate(-3deg) translateY(0); } 50% { transform: rotate(-3deg) translateY(-5px); } }
+  @keyframes bob2 { 0%, 100% { transform: rotate(2deg) translateY(0); } 50% { transform: rotate(2deg) translateY(-6px); } }
