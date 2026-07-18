@@ -1,0 +1,21 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Events",
+      "description": "Pull visible guest lists and socials from SF event platforms.",
+      "skills": [
+        "luma",
+        "partiful"
+      ]
+    },
+    {
+      "title": "Housing",
+      "description": "Find and rank SF housing searchers and available spaces.",
+      "skills": [
+        "directorysf"
+      ]
+    }
+  ]
+}
