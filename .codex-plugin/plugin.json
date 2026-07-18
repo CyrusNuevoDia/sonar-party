@@ -1,0 +1,37 @@
+{
+  "name": "sonar",
+  "version": "0.1.0",
+  "description": "Sonar for SF life — skills that pull Luma and Partiful guest lists and search DirectorySF housing.",
+  "author": {
+    "name": "Cyrus Nouroozi",
+    "url": "https://github.com/CyrusNuevoDia"
+  },
+  "homepage": "https://github.com/CyrusNuevoDia/sonar-party",
+  "repository": "https://github.com/CyrusNuevoDia/sonar-party",
+  "keywords": [
+    "san-francisco",
+    "events",
+    "luma",
+    "partiful",
+    "directorysf",
+    "housing"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sonar",
+    "shortDescription": "Guest lists and SF housing search",
+    "longDescription": "Pull clean guest lists from Luma and Partiful events, or find and rank DirectorySF housing matches.",
+    "developerName": "Cyrus Nouroozi",
+    "category": "Lifestyle",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/CyrusNuevoDia/sonar-party",
+    "defaultPrompt": [
+      "Pull the guest list from this Luma event.",
+      "Extract guests from this Partiful event.",
+      "Find DirectorySF housing matches for me."
+    ]
+  }
+}
